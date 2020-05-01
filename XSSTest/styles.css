@@ -1,0 +1,86 @@
+body{
+    background-color: #F5F5F5;
+    text-align: center;
+}
+h1{
+    color: #A5A5A5;
+    text-align: center;
+}
+.body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.blocc{
+    width: calc(33.3333% - 80px);
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 3px 1px #757575dd;
+    border-radius: 2px;
+    margin: 10px;
+    padding: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.blocc h1{
+    width: 100px;
+    margin-right: 15px;
+}
+.blocc h3{
+    font-size: 14px;
+    color: #888888;
+    text-align: left;
+}
+
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.linTitle{
+    color: #888888;
+    text-align: left;
+    /* float: left; */
+}
+
+
+.links a{
+background-color: #73c470;
+padding: 8px;
+text-decoration: none;
+display: block;
+margin: 8px;
+color: #FFFFFF;
+font-size: 16px;
+border-radius: 5px;
+font-weight: 100;
+}
+
+.tests a{
+background-color: #a299f5;
+padding: 8px;
+text-decoration: none;
+display: block;
+margin: 8px;
+color: #FFFFFF;
+font-size: 16px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.crit a{
+background-color: #f59999;
+padding: 8px;
+text-decoration: none;
+display: block;
+margin: 8px;
+color: #FFFFFF;
+font-size: 16px;
+border-radius: 5px;
+cursor: pointer;
+}

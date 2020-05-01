@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- <style>
+        body{
+            background-color: black;
+            text-align: center;
+        }
+        h1{
+            color: blueviolet;
+            text-align: center;
+        }
+        .body{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .blocc{
+            width: auto;
+            min-height: 200px;
+            background-color: aquamarine;
+            border-radius: 15px;
+            margin: 25px;
+            padding: 25px;
+        }
+    </style> -->
+  </head>
+  <body>
+   
+    <h1>Welcome to XSS test ENV</h1>
+    <hr />
+
+    <h2 class="linTitle">Without Sanitizer : </h2>
+    <div class="links crit">
+      <a href="/xinnerhtml">innerhtml</a>
+      <a href="/xdoublequotedattribute">doublequotedattribute</a>
+      <a href="/xsinglequotedattribute">singlequotedattribute</a>
+      <a href="/xdoublequoteduriattribute">doublequoteduriattribute</a>
+      <a href="/xsinglequoteduriattribute">singlequoteduriattribute</a>
+      <a href="/xuri">URI</a>
+      <a href="/xhtmlcomment">htmlcomment</a>
+    </div>
+    
+    <hr />
+    
+    <h2 class="linTitle">With Sanitizer : <div class="links">
+      <a href="/innerhtml">innerhtml</a>
+      <a href="/doublequotedattribute">doublequotedattribute</a>
+      <a href="/singlequotedattribute">singlequotedattribute</a>
+      <a href="/doublequoteduriattribute">doublequoteduriattribute</a>
+      <a href="/singlequoteduriattribute">singlequoteduriattribute</a>
+      <a href="/uri">URI</a>
+      <a href="/htmlcomment">htmlcomment</a>
+    </div>
+
+    <hr />
+
+    <h2 class="linTitle">Payloads : </h2>>
+    <div class="links tests">
+      <a
+        onclick="window.location.replace(window.location.pathname.split('%7C')[0] + '%7C' + 'Full')"
+        >Full</a
+      >
+      <a
+        onclick="window.location.replace(window.location.pathname.split('%7C')[0] + '%7C' + 'Full2')"
+        >Full2</a
+      >
+      <a
+        onclick="window.location.replace(window.location.pathname.split('%7C')[0] + '%7C' + 'removeHtml')"
+        >removeHtml</a
+      >
+    </div>
+
+    <hr />
+
+    <div class="body">

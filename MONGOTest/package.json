@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express-mongo-sanitize": "^2.0.0",
     "sanit": "file:../sanit"
   }
 }
